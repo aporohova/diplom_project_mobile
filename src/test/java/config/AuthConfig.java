@@ -2,7 +2,7 @@ package config;
 import org.aeonbits.owner.Config;
 
 @Config.Sources({
-        "classpath:config/app.properties"
+        "classpath:auth.properties"
 })
 
 public interface AuthConfig extends Config {
