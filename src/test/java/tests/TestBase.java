@@ -28,8 +28,6 @@ public class TestBase {
     void afterEach() {
         String sessionId = sessionId().toString();
         System.out.println(sessionId);
-
-        //Attach.screenshotAs("Last screenshot"); //to do
         Attach.pageSource();
 
         closeWebDriver();
