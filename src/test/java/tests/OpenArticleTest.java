@@ -12,7 +12,7 @@ import static io.qameta.allure.Allure.step;
 @Tag("android")
 public class OpenArticleTest extends TestBase{
     @Test
-    @DisplayName("Successful wiki search")
+    @DisplayName("Open Article test")
     void openArticleTest() {
         step("Type search", () -> {
             $(AppiumBy.accessibilityId("Search Wikipedia")).click();
