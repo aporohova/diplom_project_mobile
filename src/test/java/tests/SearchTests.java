@@ -20,10 +20,5 @@ public class SearchTests extends TestBase{
         step("Verify content", () ->
                 $$(AppiumBy.id("org.wikipedia.alpha:id/page_list_item_container"))
                         .shouldHave(sizeGreaterThan(0)));
-//        step("Open page", () ->
-//                $$(AppiumBy.id("org.wikipedia.alpha:id/page_list_item_container"))
-//                        .first().click());
-//        step("Check error", () ->
-//                $(AppiumBy.id("org.wikipedia.alpha:id/view_wiki_error_text")).shouldHave(text("An error occurred")));
-//
+
    }}
