@@ -29,7 +29,8 @@ ____
 <a href="ht[images](images)tps://github.com/allure-framework/allure2"><img src="images/logo/Allure.svg" width="50" height="50"  alt="Allure"/></a> 
 <a href="https://qameta.io/"><img src="images/logo/allure2.svg" width="55" height="55"  alt="Allure TestOps"/></a>   
 <a href="https://www.jenkins.io/"><img src="images/logo/jenkins.svg" width="40" height="40"  alt="Jenkins"/></a>  
-<a href="https://www.atlassian.com/ru/software/jira/"><img src="images/logo/jira.svg" width="100" height="50"  alt="Jira"/></a>  
+<a href="https://aerokube.com/selenoid/"><img width="50" height="50" title="Selenoid" src="images/logo/Selenoid.svg"></a>
+<a href="https://www.atlassian.com/ru/software/jira/"><img src="images/logo/jira.svg" width="100" height="50" alt="Jira"/></a>
 </p>
 
 ___
@@ -106,3 +107,9 @@ ____
 </p>
 
 ____
+____
+## <img alt="Selenoid" height="25" src="images/logo/Selenoid.svg" width="25"/></a> Пример видео выполнения одного из тестов на Selenoid
+____
+<p align="center">
+<img title="Selenoid Video" src="images/video/video.gif" width="550" height="350"  alt="video">   
+</p>

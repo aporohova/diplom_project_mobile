@@ -1,5 +1,4 @@
 package config;
-
 import org.aeonbits.owner.Config;
 
 @Config.Sources({
@@ -12,9 +11,6 @@ public interface BrowserstackConfig extends Config{
 
     @Key("accessKey")
     String getPassword();
-
-    @Key("baseUrl")
-    String getBaseUrl();
     @Key("appUrl")
     String getAppUrl();
 

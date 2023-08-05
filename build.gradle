@@ -39,9 +39,7 @@ allure {
         }
     }
 }
-//test {
-//    useJUnitPlatform()
-//}
+
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
@@ -56,9 +54,3 @@ tasks.withType(Test) {
         }
     }
 }
-//
-//task android(type: Test) {
-//    useJUnitPlatform {
-//        includeTags 'android'
-//    }
-//}

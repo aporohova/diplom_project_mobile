@@ -6,7 +6,6 @@ import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 import static io.qameta.allure.Allure.step;
-
 public class SearchTests extends TestBase{
     @Test
     @DisplayName("Проверка работы поиска")
@@ -18,5 +17,4 @@ public class SearchTests extends TestBase{
         step("Проверка найденного контента", () ->
                 $$(AppiumBy.id("org.wikipedia.alpha:id/page_list_item_container"))
                         .shouldHave(sizeGreaterThan(0)));
-
    }}

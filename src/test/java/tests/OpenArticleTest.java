@@ -7,7 +7,6 @@ import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 import static io.qameta.allure.Allure.step;
-
 public class OpenArticleTest extends TestBase{
     @Test
     @DisplayName("Открытие статьи с главной страницы")

@@ -9,7 +9,6 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import static com.codeborne.selenide.Selenide.*;
 import io.qameta.allure.selenide.AllureSelenide;
-
 public class TestBase {
     static String deviceHost = System.getProperty("deviceHost", "browserStack");
     @BeforeAll
@@ -23,8 +22,6 @@ public class TestBase {
                 break;
         }
         Configuration.browserSize = null;
-//        Configuration.browser = BrowserStackDriver.class.getName();
-//        Configuration.browserSize = null;
     }
 
     @BeforeEach
@@ -41,7 +38,5 @@ public class TestBase {
             Attach.addVideo(sessionId);
         }
         closeWebDriver();
-
-        //Attach.addVideo(sessionId);
     }
 }
