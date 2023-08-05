@@ -1,8 +1,7 @@
 package drivers;
 
 import com.codeborne.selenide.WebDriverProvider;
-import config.AuthConfig;
-import config.MobileConfig;
+import config.BrowserstackConfig;
 import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.MutableCapabilities;
@@ -14,8 +13,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class BrowserStackDriver implements WebDriverProvider {
-    static AuthConfig config = ConfigFactory.create(AuthConfig.class, System.getProperties());
-    static MobileConfig mobileConfig = ConfigFactory.create(MobileConfig.class, System.getProperties());
+    //static LocalConfig config = ConfigFactory.create(LocalConfig.class, System.getProperties());
+    static BrowserstackConfig config = ConfigFactory.create(BrowserstackConfig.class, System.getProperties());
 
     @Nonnull
     @Override
@@ -28,11 +27,11 @@ public class BrowserStackDriver implements WebDriverProvider {
         mutableCapabilities.setCapability("browserstack.key", config.getPassword());
 
         // Set URL of the application under test
-        mutableCapabilities.setCapability("app", mobileConfig.getAppUrl());
+        mutableCapabilities.setCapability("app", config.getAppUrl());
 
         // Specify device and os_version for testing
-        mutableCapabilities.setCapability("device", mobileConfig.getDevice());
-        mutableCapabilities.setCapability("os_version", mobileConfig.getVersion());
+        mutableCapabilities.setCapability("device", config.getDevice());
+        mutableCapabilities.setCapability("os_version", config.getVersion());
 
         // Set other BrowserStack capabilities
         mutableCapabilities.setCapability("project", "First Java Project");

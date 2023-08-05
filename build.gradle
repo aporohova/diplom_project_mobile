@@ -39,8 +39,11 @@ allure {
         }
     }
 }
-test {
-    useJUnitPlatform()
+//test {
+//    useJUnitPlatform()
+//}
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
 }
 tasks.withType(Test) {
     useJUnitPlatform()
@@ -53,9 +56,9 @@ tasks.withType(Test) {
         }
     }
 }
-
-task android(type: Test) {
-    useJUnitPlatform {
-        includeTags 'android'
-    }
-}
+//
+//task android(type: Test) {
+//    useJUnitPlatform {
+//        includeTags 'android'
+//    }
+//}
