@@ -32,6 +32,5 @@ public class OpenArticleTest extends TestBase{
         step("Проверить ошибку", () -> {
             $(AppiumBy.id("org.wikipedia.alpha:id/view_wiki_error_text")).shouldBe(Condition.visible);
         });
-
     }
 }
