@@ -53,7 +53,7 @@ ___
 ✓  Создать файл browserstack.properties и разместить по адресу src/test/resources/browserstack.properties
 ✓  Файл должен содержать следующие данные: 
 - username=username для browserstack.com
-- accessKey=accessKey юзер
+- accessKey=accessKey юзера
 - baseUrl=http://hub.browserstack.com/wd/hub
 - appUrl=bs://c700ce60cf13ae8ed97705a55b8e022f13c5827c
 - device=Google Pixel 3
