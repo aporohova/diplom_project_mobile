@@ -7,6 +7,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 import static io.qameta.allure.Allure.step;
 public class SearchTests extends TestBase{
+
     @Test
     @DisplayName("Проверка работы поиска")
     void wikiSearchTest() {

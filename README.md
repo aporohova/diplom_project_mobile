@@ -48,6 +48,18 @@ ___
 <p align="center">
 <a href="https://jenkins.autotests.cloud/job/diploma_project_web/"><img src="images/screenshots/dashboard_jenkins_mob.png" alt="Jenkins" width="950"/></a>
 
+***Для локального запуска:***
+```bash  
+✓  Создать файл browserstack.properties и разместить по адресу src/test/resources/browserstack.properties
+✓  Файл должен содержать следующие данные: 
+- username=username для browserstack.com
+- accessKey=accessKey юзер
+- baseUrl=http://hub.browserstack.com/wd/hub
+- appUrl=bs://c700ce60cf13ae8ed97705a55b8e022f13c5827c
+- device=Google Pixel 3
+- os_version=9.0
+```
+___
 __
 ## <img alt="Allure" height="25" src="images/logo/Allure.svg" width="25"/></a> <a name="Allure"></a>Allure [отчет](https://jenkins.autotests.cloud/job/diplom_project_mobile/3/allure/)</a>
 

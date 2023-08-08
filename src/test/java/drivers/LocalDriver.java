@@ -9,7 +9,6 @@ import org.openqa.selenium.WebDriver;
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
-
 import static io.appium.java_client.remote.AutomationName.ANDROID_UIAUTOMATOR2;
 public class LocalDriver implements WebDriverProvider {
     LocalConfig config = ConfigFactory.create(LocalConfig.class, System.getProperties());

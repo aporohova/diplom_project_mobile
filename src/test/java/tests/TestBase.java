@@ -10,7 +10,9 @@ import org.junit.jupiter.api.BeforeEach;
 import static com.codeborne.selenide.Selenide.*;
 import io.qameta.allure.selenide.AllureSelenide;
 public class TestBase {
+
     static String deviceHost = System.getProperty("deviceHost", "browserStack");
+
     @BeforeAll
     static void beforeAll() {
         switch (deviceHost) {
@@ -29,6 +31,7 @@ public class TestBase {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
        open();
     }
+
     @AfterEach
     void afterEach() {
         String sessionId = sessionId().toString();

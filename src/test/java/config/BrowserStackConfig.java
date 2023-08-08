@@ -4,13 +4,14 @@ import org.aeonbits.owner.Config;
 @Config.Sources({
         "classpath:browserstack.properties",
 })
-public interface BrowserstackConfig extends Config{
+public interface BrowserStackConfig extends Config{
 
     @Key("username")
     String getUserName();
 
     @Key("accessKey")
     String getPassword();
+
     @Key("appUrl")
     String getAppUrl();
 

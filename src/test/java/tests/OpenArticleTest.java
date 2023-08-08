@@ -8,6 +8,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 import static io.qameta.allure.Allure.step;
 public class OpenArticleTest extends TestBase{
+
     @Test
     @DisplayName("Открытие статьи с главной страницы")
     void openArticleFromMainPageTest() {
@@ -17,6 +18,7 @@ public class OpenArticleTest extends TestBase{
                 $$(AppiumBy.id("org.wikipedia.alpha:id/view_news_fullscreen_link_card_list"))
                         .shouldHave(sizeGreaterThan(0)));
     }
+
     @Test
     @DisplayName("Открытие найденной статьи")
     void openArticleTest() {
